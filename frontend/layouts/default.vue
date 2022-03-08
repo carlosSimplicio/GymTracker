@@ -30,10 +30,10 @@ export default ({
 a {
     text-decoration: none;
 }
-a.router-link-active {
+/* a.router-link-active {
     color: grey;
 }
 a.router-link-exact-active {
     color: grey;
-}
+} */
 </style>

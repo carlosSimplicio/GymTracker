@@ -1,0 +1,10 @@
+version: "3"
+services:
+  db:
+    image: postgres:latest
+    environment:
+      - POSTGRES_USER=gym
+      - POSTGRES_PASSWORD=gym
+    ports:
+      - 5433:5432
+    
