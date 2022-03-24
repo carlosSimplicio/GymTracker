@@ -1,8 +1,9 @@
+const _apijs = process.env.API_MOCK === '1' ? 'apimock' : 'api'
+
 export default {
   srcDir: __dirname,
   buildModules: [
-    // Simple usage
     '@nuxtjs/vuetify',
     '@nuxtjs/router'
-  ]
+  ],
 }

@@ -14,15 +14,15 @@
 </template>
 
 <script>
-import urls from '../helpers/apimock/urls'
+import urls from '../helpers/api/urls'
 export default {
     data() {
         return {
             exercises: [],
             headers: [
                 {text: "ID", value:"id"},
-                {text:"Nome", value: "nome"},
-                {text: "Grupo Muscular", value:"grupo_muscular"}
+                {text:"Nome", value: "name"},
+                {text: "Grupo Muscular", value:"musclegroup.name"}
             ]
         }
     },
