@@ -4,7 +4,7 @@
              <v-app-bar-nav-icon @click.stop="$emit('expand-drawer')"/>
             <v-toolbar-title>Diário de Treinos</v-toolbar-title>
             <v-spacer/>
-            <v-toolbar-title>GymTrack</v-toolbar-title>
+            <v-toolbar-title>GymTracker</v-toolbar-title>
         </v-app-bar>
     </div>
 </template>

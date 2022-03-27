@@ -20,5 +20,9 @@ def list_exercises(_):
         return HttpResponse(e.__str__, status=HTTPStatus.BAD_REQUEST)
 
 
-def list_routines(_):
-    return JsonResponse({})
+def list_trainings(_):
+    try:
+        trainings = services.list_trainings()
+        return JsonResponse(trainings, status=HTTPStatus.OK, safe=False)
+    except ValidationError as e:
+        return HttpResponse(e.__str__, status=HTTPStatus.BAD_REQUEST)

@@ -8,7 +8,8 @@
                         <v-expansion-panel v-for="routine in treino.routines" :key="routine.exercise.id">
                             <v-expansion-panel-header>
                                 <div class="inline-row">
-                                    <div class="mr-2">{{ routine.exercise.nome }}</div>
+                                    <div class="mr-2">{{ routine.exercise.name }}</div>
+                                    <v-spacer />
                                     <div>{{ routine.sessions.length }} séries</div>
                                 </div>
                             </v-expansion-panel-header>

@@ -6,7 +6,7 @@ export default {
         return response
     },
     async getTreinos() {
-        let response = await axios.get('http://localhost:8000/routines/list')
+        let response = await axios.get('http://localhost:8000/trainings/list')
         return response
     }
 }

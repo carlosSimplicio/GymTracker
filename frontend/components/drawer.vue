@@ -22,7 +22,7 @@
                 <router-link to="treinos">
                     <v-list-item>
                         <v-list-item-title>
-                            Treinos
+                            Meus treinos
                         </v-list-item-title>
                     </v-list-item>
                 </router-link>

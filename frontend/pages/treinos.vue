@@ -21,7 +21,7 @@
 </template>
 
 <script>
-import urls from '../helpers/apimock/urls'
+import urls from '../helpers/api/urls'
 import popupTreino from '../components/popup-treino.vue'
 import popupCriarTreino from '../components/popup-criar-treino.vue'
 
