@@ -1,0 +1,22 @@
+version: "3"
+services:
+  db:
+    image: postgres:latest
+    volumes:
+      - ./data:/var/lib/postgresql
+    environment:
+      - POSTGRES_USER=gym
+      - POSTGRES_PASSWORD=gym
+    ports:
+      - 5432:5432
+  
+  django:
+    build: .
+    restart: on-failure
+    command: bash -c "python3 manage.py migrate && python3 manage.py runserver 0.0.0.0:8000"
+    ports:
+      - 8000:8000
+    environment:
+      - DB_HOST=db
+    depends_on:
+      - db
